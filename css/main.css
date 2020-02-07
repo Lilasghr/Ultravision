@@ -121,10 +121,9 @@ a:hover {
 
 .boxgauche{
   text-align: justify;
-  display: flex;
-  width: 50%;
-  float: left;
   margin-right: 32px;
+  flex-basis: 0;
+  flex-grow: 1;
 }
 
 .sub-title{
@@ -143,12 +142,21 @@ a:hover {
   color: #fcce00;
   text-decoration: none;
   float: right;
+  margin-top: 20px;
+}
+
+.box{
+  display: flex;
 }
 
 .boxdroite{
-  display: flex;
+  margin-top: 32px;
   background: linear-gradient(#fcce00, transparent) left repeat, url(bitmap.png);
-  justify-content: center;
+  justify-content: flex-end;
+  flex-basis: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 
 .boxdroite img {
@@ -159,15 +167,35 @@ p{
   font-size: 16px;
 }
 
-.boxdroite2{
-  display: flex;
-  background: linear-gradient(#fcce00, transparent) left repeat, url(bitmap.png);
+.boxgauche2{
+  background: linear-gradient(#ff6b00, transparent) left repeat, url(bitmap2.png);
   justify-content: center;
-  width: 50%;
-  float: left;
   margin-right: 32px;
+  flex-basis: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 
-.boxdroite2 img {
-  mix-blend-mode: darken;
+.boxgauche2 img {
+  mix-blend-mode: darken
+}
+
+.boxdroite2 {
+text-align: justify;
+margin-right: 32px;
+flex-basis: 0;
+flex-grow: 1;
+}
+
+.button2 {
+  align-content: right;
+  border: 2px solid #ff6b00;
+  padding: 6px;
+  border-radius: 15px;
+  font-weight: bold;
+  color: #ff6b00;
+  text-decoration: none;
+  float: right;
+  margin-top: 20px;
 }
