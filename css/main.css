@@ -124,6 +124,7 @@ a:hover {
   display: flex;
   width: 50%;
   float: left;
+  margin-right: 32px;
 }
 
 .sub-title{
@@ -143,3 +144,18 @@ a:hover {
   text-decoration: none;
   float: right;
 }
+
+.boxdroite{
+  display: flex;
+  background: linear-gradient(#fcce00, transparent) left repeat, url(bitmap.png);
+  justify-content: center;
+}
+
+.boxdroite img {
+  mix-blend-mode: darken;
+}
+
+p{
+  font-size: 16px;
+}
+
